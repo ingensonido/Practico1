@@ -33,15 +33,17 @@ namespace Practico1
         }
 
         private int comprador;
-
         public int Comprador
+                {
+                    get { return comprador; }
+                    set { comprador = value; }
+                }
+        public Venta(int codigo, long montoVenta, int vehiculo, int comprador)
         {
-            get { return comprador; }
-            set { comprador = value; }
+            Codigo = codigo;
+            MontoVenta = montoVenta;
+            Vehiculo = vehiculo;
+            Comprador = comprador;
         }
-
-        
-
-
     }
 }

@@ -33,12 +33,17 @@ namespace Practico1
         }
 
         private String apellido;
-
         public String Apellido
+                {
+                    get { return apellido; }
+                    set { apellido = value; }
+                }
+        public Comprador(int codigo, string rut, string nombre, string apellido)
         {
-            get { return apellido; }
-            set { apellido = value; }
-        }
-
+            Codigo = codigo;
+            Rut = rut;
+            Nombre = nombre;
+            Apellido = apellido;
+        }        
     }
 }

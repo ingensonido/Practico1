@@ -25,14 +25,23 @@ namespace Practico1
             set { marca = value; }
         }
 
-        private string tipo;
+        private int tipo;
 
-        public string Tipo
+        public int Tipo
 
         {
             get { return tipo; }
             set { tipo = value; }
         }
+
+        private int anio;
+
+        public int Anio
+        {
+            get { return anio; }
+            set { anio = value; }
+        }
+
 
         private string patente;
 
@@ -43,12 +52,19 @@ namespace Practico1
         }
 
         private int kilometro;
-
         public int Kilometro
+                {
+                    get { return kilometro; }
+                    set { kilometro = value; }
+                }
+        public Vehiculo(int codigo, string marca, int tipo, int anio, string patente, int kilometro)
         {
-            get { return kilometro; }
-            set { kilometro = value; }
+            Codigo = codigo;
+            Marca = marca;
+            Tipo = tipo;
+            Anio = anio;
+            Patente = patente;
+            Kilometro = kilometro;
         }
-
     }
 }
