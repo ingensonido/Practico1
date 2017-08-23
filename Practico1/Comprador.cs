@@ -44,6 +44,6 @@ namespace Practico1
             Rut = rut;
             Nombre = nombre;
             Apellido = apellido;
-        }        
+        }
     }
 }
